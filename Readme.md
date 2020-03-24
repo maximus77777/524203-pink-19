@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Линник](https://up.htmlacademy.ru/adaptive/19/user/524203).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Удовенко](https://up.htmlacademy.ru/adaptive/19/user/7570).
 
 ---
 
