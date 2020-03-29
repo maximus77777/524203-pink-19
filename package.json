@@ -18,6 +18,6 @@
     "source/*.html"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "12.16.1"
   }
 }
