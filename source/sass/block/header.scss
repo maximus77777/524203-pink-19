@@ -1,0 +1,53 @@
+.page-header {
+  background-color: $header-bgcolor;
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.navigation__toggle {
+  position: relative;
+
+  font-size: 0;
+
+  background-color: none;
+  border: none;
+
+  &::before {
+    @include image-icon();
+  }
+}
+
+.navigation__list {
+  @include zero-list();
+}
+
+.site-list__item {
+  a {
+    font-size: $site-font_size;
+    line-height: $site-line-height;
+    font-weight: $site-font_weight;
+    color: $site-color;
+    text-transform: $site-transtext;
+    background-color: $site-bgcolor;
+  }
+}
+
+.site-list_link {
+  &:hover {
+    color: $site-hover-color;
+  }
+
+  &:active {
+    color: $site-active-color;
+  }
+}
+
+.page-header__title {
+  display: block;
+
+  font-size: $title-font_size;
+  font-weight: $title-font_weight;
+  color: $site-color;
+}
+

@@ -1,0 +1,40 @@
+/*@mixin, @include*/
+@mixin image-icon( $bg-image: url("/img/icon-menu-burger.svg"), $width: 50px, $height: 24px, $top: 0, $left: 0) {
+  content: "";
+  position: absolute;
+
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@mixin zero-list() {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+@mixin zero() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font($font-size: $body-font_size, $line-height: $body-line_height, $font-weight: $body-font_weight, $color: $body-color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin border ($width: $app-border-width, $style: $app-border-style, $color: $app-border-color, $radius: $app-radius) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+  border-radius: $radius;
+}

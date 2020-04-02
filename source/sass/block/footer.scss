@@ -1,0 +1,13 @@
+.social {
+  @include zero-list();
+}
+
+.social__twitter,
+.social__facebook,
+.social__youtube {
+  @include border($social-border-width, $social-border-style,$social-border-color, $social-border-radius);
+}
+
+.page-footer__text {
+  @include font($footer-font_size, $footer-line_height, $footer-font_weight);
+}

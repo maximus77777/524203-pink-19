@@ -1,0 +1,8 @@
+.advantage__list {
+  @include zero-list();
+}
+
+.sort-list__title {
+  @include font($adva-title-font_size, $adva-title-line_height, $adva-title-font_weight, $adva-title-color);
+}
+
