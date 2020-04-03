@@ -36,6 +36,9 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "12.16.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

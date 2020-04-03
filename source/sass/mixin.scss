@@ -1,0 +1,11 @@
+@mixin zero-list() {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+@mixin zero() {
+  margin: 0;
+  padding: 0;
+}

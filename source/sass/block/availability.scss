@@ -1,0 +1,25 @@
+.availability {
+  background-color: $block-bgcolor;
+}
+
+.availability__download {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+}
+
+.availability__application {
+  @include zero-list();
+}
+
+.availability__text {
+  @include zero();
+
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
