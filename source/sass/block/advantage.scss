@@ -1,7 +1,16 @@
+
+
 .advantage__list {
   @include zero-list();
+
+  background-image: url("/img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.sort-list__title {
-  @include font($adva-title-font_size, $adva-title-line_height, $adva-title-font_weight, $adva-title-color);
+.advantage__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }

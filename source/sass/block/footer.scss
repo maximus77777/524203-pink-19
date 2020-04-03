@@ -1,13 +1,14 @@
-.social {
+.page-footer__social {
   @include zero-list();
 }
 
-.social__twitter,
-.social__facebook,
-.social__youtube {
-  @include border($social-border-width, $social-border-style,$social-border-color, $social-border-radius);
+.page-footer__twitter,
+.page-footer__facebook,
+.page-footer__youtube {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
 }
 
 .page-footer__text {
-  @include font($footer-font_size, $footer-line_height, $footer-font_weight);
+  line-height: 18px;
 }

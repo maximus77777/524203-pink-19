@@ -10,13 +10,23 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
       </a>
-      <nav class="page-header__main-nav navigation">
-        <button class="navigation__toggle" type="button">Открыть меню</button>
-        <ul class="navigation__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__burger-link" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="24" viewBox="0 0 50 24">
+            <g>
+              <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+            </g>
+            <g>
+              <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+            </g>
+          </svg>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
       <b class="page-header__title">Взгляните на жизнь иначе!</b>
@@ -29,10 +39,25 @@
       <section class="availability">
         <h2 class="visually-hidden">Доступность сайта - "Пинк"</h2>
         <a class="availability__download" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
-        <ul class="availability__application apps">
-          <li class="apps__item"><a class="apps__link apps__link--apple" href="https://www.apple.com">Apple</a></li>
-          <li class="apps__item"><a class="apps__link apps__link--android" href="https://www.android.com">Android</a></li>
-          <li class="apps__item"><a class="apps__link apps__link--microsoft" href="https://www.microsoft.com">Microsoft</a></li>
+        <ul class="availability__application">
+          <li class="availability__item">
+            <a class="availability__link" href="https://www.apple.com">
+            <span class="visually-hidden">Apple</span>
+              <img src="/img/logo-apple.svg" width="47" height="56" alt="Эппл">
+          </a>
+        </li>
+          <li class="availability__item">
+            <a class="availability__link" href="https://www.android.com">
+              <span class="visually-hidden">Android</span>
+              <img src="/img/logo-android.svg" width="43" height="47" alt="Андроид">
+            </a>
+          </li>
+          <li class="availability__item">
+            <a class="availability__link" href="https://www.microsoft.com">
+              <span class="visually-hidden">Microsoft</span>
+              <img src="/img/logo-microsoft.svg" width="44" height="41" alt="Микрософт">
+            </a>
+          </li>
         </ul>
         <p class="availability__text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -45,21 +70,20 @@
       </section>
       <section class="advantage">
         <h2 class="visually-hidden">Преимущество Сайта - "Пинк"</h2>
-        <ul class="advantage__list sort-list">
-          <li class="sort-list__item">
-            <h2 class="sort-list__title">Поднимает настроение</h2>
-            <p class="sort-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <h2 class="advantage__title">Поднимает настроение</h2>
+            <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="sort-list__item">
-            <h2 class="sort-list__title">Меняет мир вокруг</h2>
-            <p class="sort-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="advantage__item">
+            <h2 class="advantage__title">Меняет мир вокруг</h2>
+            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="sort-list__item">
-            <h2 class="sort-list__title">Заводит новых друзей</h2>
-            <p class="sort-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="advantage__item">
+            <h2 class="advantage__title">Заводит новых друзей</h2>
+            <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantage__image" src="/img/iphone-screen-mobile@1x.png" width="157" height="330" alt="Изображение смайлика на телефоне">
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы сайта - "Пинк"</h2>

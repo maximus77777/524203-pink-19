@@ -1,34 +1,25 @@
 .availability {
-  background-color: $main-bgcolor;
+  background-color: $block-bgcolor;
 }
 
 .availability__download {
-  @include font($app-font_size, $app-line_height, $app-font_weight, $app-color);
-  @include border($app-border-width, $app-border-style, $app-border-color, $app-radius);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  border-radius: 25px;
 }
 
 .availability__application {
   @include zero-list();
 }
 
-.apps__link {
-  position: relative;
-  font-size: 0;
-
-  &--apple::before {
-    @include image-icon(url("/img/logo-apple.svg"), 47px, 56px);
-  }
-
-  &--android::before {
-    @include image-icon(url("/img/logo-android.svg"), 47px, 56px);
-  }
-
-  &--microsoft::before {
-    @include image-icon(url("/img/logo-microsoft.svg"), 47px, 56px);
-  }
-}
-
 .availability__text {
   @include zero();
-  @include font($ava-text-font_size, $ava-text-line_height, $ava-text-font_wight, $ava-text-color);
+
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
 }

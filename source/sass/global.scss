@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: $body-font-family, "Arial", sans-serif;
-
-  @include font();
-  font-style: $body-font-style;
-
-  background-color: $body-bgcolor;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: $color;
+  background-color: $bgcolor;
 }
 
 img {

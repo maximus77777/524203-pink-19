@@ -1,9 +1,11 @@
 .proposal {
-  background-color: $pro-bgcolor;
+  background-color: #ffffff;
 }
 
 .proposal__item {
   display: block;
 
-  @include font($pro-font_size, $pro-line_height, $pro-font_weight);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
 }

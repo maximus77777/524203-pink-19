@@ -2,23 +2,30 @@
   @include zero-list();
 }
 
-.information__name {
-  @include font($name-font_size, $name-line_height, $name-font_weight);
+.photo__name {
+  line-height: 24px;
+  font-weight: 700;
 
   span {
-    font-weight: $backtime-font_weight;
+    font-weight: 300;
   }
 }
 
 .photo-list__checkbox {
-  @include font($red-check-font_size, $red-check-line_height, $red-check-font_weight, $red-check-color);
-  background-color: $red-check-bgcolor;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: $red-bgcolor;
 }
 
-.information__like {
-  @include font($like-font_size, $like-line-height, $like-fon_weight, $like-color);
+.photo__like {
+  font-size: 12px;
+  line-height: 24px;
+  color: $red-color;
 }
 
-.information__heart {
-  fill: $like-color;
+.photo__heart {
+  fill: $red-color;
 }
