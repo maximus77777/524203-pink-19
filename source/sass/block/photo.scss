@@ -2,6 +2,10 @@
   @include zero-list();
 }
 
+.photo-list__item {
+  background-color: $bgcolor;
+}
+
 .photo__name {
   line-height: 24px;
   font-weight: 700;
@@ -28,4 +32,8 @@
 
 .photo__heart {
   fill: $red-color;
+}
+
+.photo__text-item {
+  background-color: $white-bgcolor;
 }

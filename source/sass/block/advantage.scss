@@ -1,4 +1,6 @@
-
+.advantage {
+  background-color: $bgcolor;
+}
 
 .advantage__list {
   @include zero-list();

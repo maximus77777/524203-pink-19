@@ -1,0 +1,7 @@
+.radio-list {
+  @include zero-list();
+}
+
+.radio-list__label {
+  font-size: 18px;
+}

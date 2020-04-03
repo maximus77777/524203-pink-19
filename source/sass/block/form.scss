@@ -1,0 +1,32 @@
+.form__main-item {
+  border: none;
+  background-color: $white-bgcolor;
+
+  &:nth-child(2) {
+    background-color: $bgcolor;
+  }
+
+  &:nth-child(4) {
+    background-color: $bgcolor;
+  }
+}
+
+.form__list {
+  @include zero-list();
+}
+
+.form__title {
+  line-height: 18px;
+  color: $red-color;
+  text-transform: uppercase;
+}
+
+.form__button {
+  color: $white-color;
+  background-color: $green-color;
+  border: none;
+}
+
+.form__legend {
+  font: inherit;
+}

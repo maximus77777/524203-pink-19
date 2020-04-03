@@ -1,0 +1,17 @@
+.input-list {
+  @include zero-list();
+}
+
+.input-list__label {
+  color: $red-color;
+  text-transform: uppercase;
+}
+
+.input-list__input-text {
+  font: inherit;
+  color: inherit;
+
+  &::placeholder {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,18 @@
+.input-contacts-list {
+  @include zero-list();
+}
+
+.input-contacts-list__label {
+  color: $red-color;
+  text-transform: uppercase;
+}
+
+.input-contacts-list__email,
+.input-contacts-list__phone {
+  font: inherit;
+  color: inherit;
+
+  &::placeholder {
+    font-size: 18px;
+  }
+}

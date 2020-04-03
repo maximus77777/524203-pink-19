@@ -1,0 +1,8 @@
+.textarea-list__text {
+  font: inherit;
+  color: inherit;
+
+  &::placeholder {
+    font-size: 18px;
+  }
+}
