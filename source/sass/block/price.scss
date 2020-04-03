@@ -1,0 +1,30 @@
+.price {
+  background-color: $bgcolor;
+}
+
+.price-list {
+  @include zero-list();
+}
+
+.price__row {
+  background-color: $white-color;
+
+  &--color {
+    background-color: $dark-color;
+  }
+}
+
+.price__col-title {
+  font-size: 18px;
+  color: $white-color;
+  text-transform: uppercase;
+
+  span {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+.price__text {
+  text-transform: uppercase;
+}
