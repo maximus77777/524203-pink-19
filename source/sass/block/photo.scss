@@ -1,8 +1,56 @@
-.photo-list {
+.photo__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   @include zero-list();
 }
 
-.photo-list__item {
+.photo__wrapper {
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.photo__checkbox {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: $red-bgcolor;
+}
+
+.photo__picture {
+  img {
+    display: none;
+    vertical-align: bottom;
+  }
+}
+
+.photo__link {
+  &:nth-child(1) {
+    display: block;
+  }
+}
+
+.photo__main-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+
+  background-color: $bgcolor;
+}
+
+.photo__item {
+  width: 280px;
+  margin-bottom: 20px;
   background-color: $bgcolor;
 }
 
@@ -13,15 +61,6 @@
   span {
     font-weight: 300;
   }
-}
-
-.photo-list__checkbox {
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
-
-  background-color: $red-bgcolor;
 }
 
 .photo__like {
@@ -37,3 +76,77 @@
 .photo__text-item {
   background-color: $white-bgcolor;
 }
+
+.photo {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    width: $tablet-width;
+  }
+
+  .photo__block {
+    width: 620px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .photo__main-info {
+    width: 620px;
+  }
+
+  .photo__name {
+    margin-right: auto;
+  }
+
+  .photo__text {
+    order: 2;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
+
+  .photo__link {
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    width: $desktop-width;
+  }
+
+  .photo__block {
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .photo__main-info {
+    width: 940px;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
+
+  .photo__link {
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      display: block;
+    }
+  }
+}
+

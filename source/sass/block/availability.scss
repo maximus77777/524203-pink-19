@@ -1,19 +1,73 @@
-.availability {
-  background-color: $block-bgcolor;
-}
-
 .availability__download {
   color: #ffffff;
+
+  margin-bottom: 32px;
 }
 
 .availability__application {
   @include zero-list();
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .availability__text {
   @include zero();
+  width: 240px;
 
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.availability__title {
+  position: relative;
+  top: -370px;
+  height: 28px;
+  display: block;
+  width: 230px;
+  margin: 0 auto;
+
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.availability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $block-bgcolor;
+}
+
+@media (min-width: $tablet-width) {
+  .availability {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -535px;
+    margin-left: -330px;
+    background-color: transparent;
+  }
+
+  .availability__title {
+    position: relative;
+    top: 0;
+    width: 186px;
+    height: 126px;
+    margin-bottom: 40px;
+
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .availability {
+    margin-left: -398px;
+  }
 }

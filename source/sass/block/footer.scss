@@ -1,8 +1,11 @@
 .page-footer {
+  width: auto;
   background-color: $white-bgcolor;
 }
 
 .page-footer__social {
+  display: flex;
+
   @include zero-list();
 }
 
@@ -24,4 +27,29 @@
   background-color: $red-color;
   border: 9px solid #ffffff;
   border-radius: 50%;
+}
+
+.page-footer__company {
+  display: flex;
+}
+
+.page-footer__grid {
+  display: none;
+
+  &--block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__grid {
+    width: 660px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
