@@ -7,6 +7,7 @@
 .availability__application {
   @include zero-list();
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 24px;
 }
@@ -22,52 +23,52 @@
   margin-bottom: 32px;
 }
 
-.availability__title {
-  position: relative;
-  top: -370px;
-  height: 28px;
-  display: block;
-  width: 230px;
-  margin: 0 auto;
-
-  font-size: 24px;
-  font-weight: 300;
-  color: #ffffff;
-  text-align: center;
+.availability {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
 }
 
-.availability {
+.availability__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: $block-bgcolor;
 }
 
 @media (min-width: $tablet-width) {
   .availability {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-top: -535px;
-    margin-left: -330px;
-    background-color: transparent;
-  }
-
-  .availability__title {
-    position: relative;
-    top: 0;
-    width: 186px;
-    height: 126px;
-    margin-bottom: 40px;
-
-    font-size: 40px;
-    line-height: 40px;
+    margin: 0;
+    padding-bottom: 80px;
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: $desktop-width) {
   .availability {
-    margin-left: -398px;
+    position: relative;
+    justify-content: flex-start;
+
+    width: $desktop-width;
+    margin: 0 auto;
+
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: -219px;
+      left: 355px;
+
+      width: 600px;
+      height: 643px;
+
+      background-image: url("/img/iphone-hand-desktop@1x.png");
+      background-size: auto 590px;
+      background-repeat: no-repeat;
+      background-position: 73% 0;
+
+      z-index: -1;
+    }
   }
 }

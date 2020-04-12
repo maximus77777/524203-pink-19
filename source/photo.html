@@ -8,29 +8,33 @@
   </head>
   <body>
     <header class="page-header center">
-      <div class="page-header__wrapper page-header__wrapper--bg-image">
-        <nav class="main-nav main-nav--padding">
-          <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo">
-              <img class="main-nav__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-            </a>
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Закрыть меню</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23" viewBox="0 0 24 23" >
-                <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-              </svg>
-            </button>
+      <div class="page-header__wrapper page-header__wrapper--bg-image page-header__wrapper--height">
+        <div class="page-header__wrapper-small-image page-header__wrapper-small-image--bg-image">
+          <nav class="main-nav">
+            <div class="main-nav__logo-wrapper">
+              <a class="main-nav__logo">
+                <img class="main-nav__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+              </a>
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Закрыть меню</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23" viewBox="0 0 24 23" >
+                  <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a>Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+          </nav>
+          <h1 class="visually-hidden">Сайт - "Пинк"</h1>
+          <b class="page-header__title page-header__title--photo-title page-header__title--padding">Фотографии пользователей</b>
+          <div class="page-header__wrapper-text">
+            <p class="page-header__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a>Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </nav>
-        <h1 class="visually-hidden">Сайт - "Пинк"</h1>
-        <b class="page-header__title">Фотографии пользователей</b>
-        <p class="page-header__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
       </div>
     </header>
     <main class="page-main page-main--color">
@@ -45,7 +49,7 @@
           <span class="photo__checkbox">Панорама дня</span>
           <div class="photo__main-info">
             <b class="photo__name">Анна<span>(5 минут назад)</span></b>
-            <p class="photo__text">
+            <p class="photo__main-text">
               Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
             <div class="photo__wrapper-like">
@@ -54,7 +58,7 @@
                   <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                 </g>
               </svg>
-              <b class="photo__like">Нравится:215</b>
+              <b class="photo__main-like">Нравится:215</b>
             </div>
           </div>
         </div>
