@@ -1,19 +1,74 @@
-.availability {
-  background-color: $block-bgcolor;
-}
-
 .availability__download {
   color: #ffffff;
+
+  margin-bottom: 32px;
 }
 
 .availability__application {
   @include zero-list();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .availability__text {
   @include zero();
+  width: 240px;
 
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.availability {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+.availability__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .availability {
+    margin: 0;
+    padding-bottom: 80px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .availability {
+    position: relative;
+    justify-content: flex-start;
+
+    width: $desktop-width;
+    margin: 0 auto;
+
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: -219px;
+      left: 355px;
+
+      width: 600px;
+      height: 643px;
+
+      background-image: url("/img/iphone-hand-desktop@1x.png");
+      background-size: auto 590px;
+      background-repeat: no-repeat;
+      background-position: 73% 0;
+
+      z-index: -1;
+    }
+  }
 }

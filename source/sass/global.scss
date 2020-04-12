@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  @include zero-list();
+  min-width: $mobile-width;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
@@ -11,6 +12,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -41,10 +43,17 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  padding: 17px 38px 19px;
+
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
 
   border: 3px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 35px;
+}
+
+.center {
+  width: $mobile-width;
+  margin: 0 auto;
 }
