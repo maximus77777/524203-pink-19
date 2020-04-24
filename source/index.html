@@ -101,15 +101,39 @@
         <div class="reviews__wrapper slider">
           <div class="reviews__list slider-list">
             <blockquote class="reviews__item slider__item">
+              <svg class="reviews__icon-quotes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79px" height="63px" viewBox="0 0 79 63">
+                <g>
+                  <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
+                </g>
+                <g>
+                  <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
+                </g>
+              </svg>
               <b class="reviews__author-name">Николай Петров</b>
+              <p class="reviews__information">25 лет, водитель трамвая</p>
+
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--border" type="button">1</button>
-            <button class="slider__toggle slider__toggle--border" type="button">2</button>
-            <button class="slider__toggle slider__toggle--border" type="button">3</button>
-          </p>
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+            <div class="slider__wrapper">
+              <button class="slider__arrows slider__arrows--left" type="button">
+                <span class="visually-hidden">Стрелка слева</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="41" viewBox="0 0 22 41">
+                  <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+                </svg>
+              </button>
+              <button class="slider__arrows slider__arrows--right" type="button">
+                <span class="visually-hidden">Стрелка справа</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="41" viewBox="0 0 22 41">
+                  <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="price">
@@ -118,39 +142,131 @@
           <ul class="price-list slider-list">
             <li class="price__item slider__item">
               <table class="price__table">
-                <tr class="price__row price__row--color">
-                  <th class="price__col-title price__col-title--checkbox">Стандарт<br><span>3,99 USD</span></th>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width price__col--left-text">
+                    <span class="price__text price__text--block">Розовый фильтр</span>
+                  </td>
                 </tr>
                 <tr class="price__row">
-                  <td class="price__col"><span class="price__text checkbox-checked">Розовый фильтр</span></td>
+                  <td class="price__col price__col--top-width price__col--left-text">
+                    <span class="price__text price__text--block checkbox-checked">Смайлики</span>
+                  </td>
                 </tr>
                 <tr class="price__row">
-                  <td class="price__col"><span class="price__text checkbox-checked">Смайлики</span></td>
+                  <td class="price__col price__col--top-width price__col--left-text">
+                    <span class="price__text price__text--block checkbox">Комментарии</span>
+                  </td>
+                </tr>
+              </table>
+            </li>
+            <li class="price__item slider__item">
+              <table class="price__table">
+                <tr class="price__row price__row--color price__row--top-border">
+                  <th class="price__col-title price__col-title--del-border"><span>База</span><br><span class="price__font-light">1,99 USD</span></th>
                 </tr>
                 <tr class="price__row">
-                  <td class="price__col"><span class="price__text checkbox">Комментарии</span></td>
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text">Розовый фильтр</span>
+                    <svg class="price__icon-yes" id="yes-checkbox" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="-90.357 4.875 31 21">
+                      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text checkbox-checked">Смайлики</span>
+                    <svg class="price__icon-no" id="no-checkbox" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="26" viewBox="0 0 27 26">
+                      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text checkbox">Комментарии</span>
+                    <svg class="price__icon-no" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="26" viewBox="0 0 27 26">
+                      <use xlink:href = "#no-checkbox" />
+                    </svg>
+                  </td>
+                </tr>
+              </table>
+            </li>
+            <li class="price__item price__item--margin slider__item">
+              <table class="price__table">
+                <tr class="price__row price__row--color price__row--top-border">
+                  <th class="price__col-title price__col-title--position price__col-title--del-border"><span>Стандарт</span><br><span class="price__font-light">3,99 USD</span></th>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text">Розовый фильтр</span>
+                    <svg class="price__icon-yes" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                      <use xlink:href = "#yes-checkbox" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text checkbox-checked">Смайлики</span>
+                    <svg class="price__icon-yes" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                      <use xlink:href = "#yes-checkbox" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text checkbox">Комментарии</span>
+                    <svg class="price__icon-no" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="26" viewBox="0 0 27 26">
+                      <use xlink:href = "#no-checkbox" />
+                    </svg>
+                  </td>
+                </tr>
+              </table>
+            </li>
+            <li class="price__item price__item--margin slider__item">
+              <table class="price__table">
+                <tr class="price__row price__row--color price__row--top-border">
+                  <th class="price__col-title price__col-title--del-border"><span>Анлим</span><br><span class="price__font-light">9,99 USD</span></th>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text">Розовый фильтр</span>
+                    <svg class="price__icon-yes" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                      <use xlink:href = "#yes-checkbox" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text checkbox-checked">Смайлики</span>
+                    <svg class="price__icon-yes" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                      <use xlink:href = "#yes-checkbox" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__col price__col--top-width">
+                    <span class="price__text checkbox">Комментарии</span>
+                    <svg class="price__icon-yes" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                      <use xlink:href = "#yes-checkbox" />
+                    </svg>
+                  </td>
                 </tr>
               </table>
             </li>
           </ul>
           <p class="price__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--border" type="button">1</button>
-            <button class="slider__toggle slider__toggle--border" type="button">2</button>
-            <button class="slider__toggle slider__toggle--border" type="button">3</button>
+            <button class="slider__toggle slider__toggle--border" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle slider__toggle--border slider__toggle--active" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle slider__toggle--border" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="page-footer__map" src="/img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
-        <div class="page-footer__marker"><span class="visually-hidden">Маркер</span></div>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты сайта - "Пинк"</h2>
+          <b class="contacts__title-text contacts__title-text--width">Остались вопросы? Свяжитесь с нами!</b>
           <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__text contacts__text--width">Остались вопросы? Свяжитесь с нами!</p>
-            </li>
             <li class="contacts__item">
               <b class="contacts__title">Звоните:</b>
               <a class="contacts__phone" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
@@ -165,6 +281,12 @@
             </li>
           </ul>
         </section>
+        <div class="page-footer__wrapper-map">
+          <img class="page-footer__map page-footer__map--mobile" src="/img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
+          <img class="page-footer__map page-footer__map--tablet" src="/img/bg-map-tablet@1x.jpg" width="700" height="848" alt="Карта">
+          <img class="page-footer__map page-footer__map--desktop" src="/img/bg-map-desktop@1x.jpg" width="2560" height="1002" alt="Карта">
+          <div class="page-footer__marker"><span class="visually-hidden">Маркер</span></div>
+        </div>
         <div class="page-footer__grid">
           <a class="page-footer__logo">
             <img class="page-footer__logo-image" src="/img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">

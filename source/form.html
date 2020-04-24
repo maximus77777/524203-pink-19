@@ -37,9 +37,9 @@
         </div>
       </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--form-color">
       <form class="form" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__main-item input-list">
+        <fieldset class="form__main-item">
           <ul class="input-list">
             <li class="input-list__item">
               <label class="input-list__label" for="lastname">Фамилия:</label>
@@ -56,43 +56,50 @@
           </ul>
         </fieldset>
         <fieldset class="form__main-item">
-          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="form__list checkbox-list">
+          <legend class="form__title form__title--width">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="checkbox-list">
             <li class="checkbox-list__item">
-              <input class="checkbox-list__input" type="checkbox" id="checkbox-1" checked>
-              <label class="checkbox-list__label" for="checkbox-1">Сделал селфи с акулой</label>
+              <div class="checkbox-list__wrapper">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" id="checkbox-1" checked>
+                <label class="checkbox-list__label" for="checkbox-1">Сделал селфи с акулой</label>
+              </div>
+              <div class="checkbox-list__wrapper">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" id="checkbox-2" checked>
+                <label class="checkbox-list__label" for="checkbox-2">Обгорел на пляже</label>
+              </div>
             </li>
             <li class="checkbox-list__item">
-              <input class="checkbox-list__input" type="checkbox" id="checkbox-2" checked>
-              <label class="checkbox-list__label" for="checkbox-2">Обгорел на пляже</label>
+              <div class="checkbox-list__wrapper">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" id="checkbox-3">
+                <label class="checkbox-list__label" for="checkbox-3">Видел Чака Норриса</label>
+              </div>
+              <div class="checkbox-list__wrapper">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" id="checkbox-4">
+                <label class="checkbox-list__label" for="checkbox-4">Накупил сувениров</label>
+              </div>
             </li>
             <li class="checkbox-list__item">
-              <input class="checkbox-list__input" type="checkbox" id="checkbox-3">
-              <label class="checkbox-list__label" for="checkbox-3">Видел Чака Норриса</label>
-            </li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__input" type="checkbox" id="checkbox-4">
-              <label class="checkbox-list__label" for="checkbox-4">Накупил сувениров</label>
-            </li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__input" type="checkbox" id="checkbox-5" checked>
-              <label class="checkbox-list__label" for="checkbox-5">Удержал башню</label>
-            </li>
-            <li class="checkbox-list__item">
-              <input class="checkbox-list__input" type="checkbox" id="checkbox-6">
-              <label class="checkbox-list__label" for="checkbox-6">Разгромил отель</label>
+              <div class="checkbox-list__wrapper">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" id="checkbox-5" checked>
+                <label class="checkbox-list__label" for="checkbox-5">Удержал башню</label>
+              </div>
+              <div class="checkbox-list__wrapper">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" id="checkbox-6">
+                <label class="checkbox-list__label" for="checkbox-6">Разгромил отель</label>
+              </div>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__main-item input-contacts-list">
+        <fieldset class="form__main-item">
+          <legend class="form__title form__title--mobile-none">Контактная информация</legend>
           <ul class="input-contacts-list">
             <li class="input-contacts-list__item">
               <label class="input-contacts-list__label" for="phone">Номер телефона</label>
-              <input class="input-contacts-list__phone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              <input class="input-contacts-list__phone input-contacts-list__phone--image-phone" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
             </li>
             <li class="input-contacts-list__item">
               <label class="input-contacts-list__label" for="email">Адрес почты</label>
-              <input class="input-contacts-list__email" type="email" name="email" id="email" placeholder="Введите почту *">
+              <input class="input-contacts-list__email input-contacts-list__email--image-email" type="email" name="email" id="email" placeholder="Введите почту *">
             </li>
           </ul>
         </fieldset>
@@ -100,15 +107,15 @@
           <legend class="form__title">С каким приложением путешествовали?</legend>
           <ul class="radio-list">
             <li class="radio-list__item">
-              <input class="radio-list__input" type="radio" id ="radio-1" name="radio" checked>
+              <input class="radio-list__input visually-hidden" type="radio" id ="radio-1" name="radio" checked>
               <label class="radio-list__label" for="radio-1">Pink для iOS</label>
             </li>
             <li class="radio-list__item">
-              <input class="radio-list__input" type="radio" id ="radio-2" name="radio">
+              <input class="radio-list__input visually-hidden" type="radio" id ="radio-2" name="radio">
               <label class="radio-list__label" for="radio-2">Pink на Android</label>
             </li>
             <li class="radio-list__item">
-              <input class="radio-list__input" type="radio" id ="radio-3" name="radio">
+              <input class="radio-list__input visually-hidden" type="radio" id ="radio-3" name="radio">
               <label class="radio-list__label" for="radio-3">Windows Phone</label>
             </li>
           </ul>
@@ -116,12 +123,15 @@
         <fieldset class="form__main-item textarea-list">
           <legend class="form__title">Опишите свои эмоции</legend>
           <div class="textarea-list">
-            <label class="textarea-list__label" for="text"></label>
             <textarea class="textarea-list__text" name="text" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
-          <button class="form__button" type="submit">Отправить форму</button>
-          <small class="form__legend"><sup>*</sup> — обязательные поля</small>
         </fieldset>
+        <div class="form__button-submit">
+          <div class="form__wrapper-submit">
+            <button class="form__button" type="submit">Отправить форму</button>
+            <small class="form__legend"><sup>*</sup> — обязательные поля</small>
+          </div>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
