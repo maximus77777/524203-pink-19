@@ -1,8 +1,33 @@
+.textarea-list {
+  display: flex;
+  justify-content: center;
+
+  width: 320px;
+}
+
 .textarea-list__text {
+  width: 280px;
   font: inherit;
   color: inherit;
 
   &::placeholder {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textarea-list {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .textarea-list__text {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea-list {
+    width: 820px;
   }
 }

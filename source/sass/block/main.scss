@@ -5,3 +5,11 @@
     background-color: $white-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    &--form-color {
+      background-color: $white-color;
+    }
+  }
+}

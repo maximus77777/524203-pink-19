@@ -61,18 +61,20 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
-    width: $desktop-width;
+    width: auto;
 
     background-color: $bgcolor;
     background-image: url("/img/bg-triangle-white.svg");
-    background-size: 956px 75px;
+    background-size: contain;
   }
 
   .advantage__list {
+    width: $desktop-width;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
+    margin: 0 auto;
     min-height: 550px;
 
     background-image: url("/img/iphone-screen-1-desktop@1x.png"), url("/img/iphone-screen-2-desktop@1x.png"), url("/img/iphone-screen-3-desktop@1x.png");

@@ -1,17 +1,49 @@
 .input-list {
+  display: flex;
+  flex-direction: column;
+
   @include zero-list();
+  width: 280px;
+  margin: 0 auto;
+
+  .input-list__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-list__label {
+    color: $red-color;
+    text-transform: uppercase;
+  }
+
+  .input-list__input-text {
+    font: inherit;
+    color: inherit;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
 }
 
-.input-list__label {
-  color: $red-color;
-  text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  .input-list {
+    width: 620px;
+    margin: 0 auto;
+
+    .input-list__item {
+      flex-direction: row;
+    }
+
+    .input-list__input-text {
+      width: 100%;
+    }
+  }
 }
 
-.input-list__input-text {
-  font: inherit;
-  color: inherit;
-
-  &::placeholder {
-    font-size: 18px;
+@media (min-width: $desktop-width) {
+  .input-list {
+    width: 470px;
+    margin: 0 auto;
   }
 }
