@@ -1,56 +1,85 @@
 .slider__toggles {
-  min-height: 70px;
   display: flex;
-  justify-content: center;
   align-items: center;
 
-  .slider__toggle {
-    width: 6px;
-    height: 6px;
-    margin-right: 18px;
-    padding: 3px;
+  width: 22%;
+  max-width: 100px;
+  min-height: 20px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
 
-    background-color: $opacity-dark-color;
-    border-radius: 50%;
-    border: none;
+.slider__toggle {
+  display: block;
 
-    &:nth-child(3n) {
-      margin-right: 0;
+  width: 6px;
+  height: 6px;
+  margin-right: auto;
+  padding: 3px;
+
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &--link {
+    &:hover {
+      background-color: rgba(40, 54, 69, 0.6);
     }
 
-    &--active {
-      background-color: #ffffff;
-      border: 3px solid $dark-color;
+    &:active {
+      background-color: rgba(40, 54, 69, 0.1);
     }
   }
 
-  .slider__arrows {
-    display: none;
+  &--active {
+    background-color: #ffffff;
+    border: 3px solid $dark-color;
+  }
+}
+
+.slider__arrows {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles {
+    width: 10%;
+    margin-bottom: 3px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__toggles {
-    .slider__toggle {
-      display: none;
-    }
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
-    .slider__wrapper {
-      display: flex;
-      justify-content: space-between;
+  .slider__toggle {
+    display: none;
+  }
 
-      width: $desktop-width;
-      padding: 0 20px;
-    }
+  .slider__wrapper {
+    display: flex;
+    justify-content: space-between;
 
-    .slider__arrows {
-      display: block;
-      background-color: transparent;
-      border: none;
+    width: 100%;
+  }
 
-      fill: $dark-color;
-      fill-opacity: 0.3;
-    }
+  .slider__arrows {
+    display: block;
+
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    fill: $dark-color;
+    fill-opacity: 0.3;
   }
 }
 

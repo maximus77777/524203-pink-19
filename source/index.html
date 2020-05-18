@@ -4,30 +4,28 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/pixel-glass.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header center">
       <div class="page-header__wrapper">
         <div class="page-header__wrapper-small-image">
-          <nav class="main-nav">
-            <div class="main-nav__logo-wrapper">
-              <a class="main-nav__logo">
-                <img class="main-nav__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-              </a>
-              <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Закрыть меню</span>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23" viewBox="0 0 24 23" >
-                  <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-                </svg>
-              </button>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="main-nav__wrapper">
+              <div class="main-nav__logo-wrapper">
+                <a class="main-nav__logo">
+                  <img class="main-nav__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+                </a>
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+              </div>
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+              </ul>
             </div>
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a>Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            </ul>
           </nav>
           <h1 class="visually-hidden">Сайт - "Пинк"</h1>
           <div class="page-header__wrapper-title">
@@ -45,13 +43,13 @@
                   <img src="/img/logo-apple.svg" width="47" height="56" alt="Эппл">
                 </a>
               </li>
-              <li class="availability__item">
+              <li class="availability__item availability__item--padding-top">
                 <a class="availability__link" href="https://www.android.com">
                   <span class="visually-hidden">Android</span>
                   <img src="/img/logo-android.svg" width="43" height="47" alt="Андроид">
                 </a>
               </li>
-              <li class="availability__item">
+              <li class="availability__item availability__item--padding-top">
                 <a class="availability__link" href="https://www.microsoft.com">
                   <span class="visually-hidden">Microsoft</span>
                   <img src="/img/logo-microsoft.svg" width="44" height="41" alt="Микрософт">
@@ -80,10 +78,10 @@
           </li>
           <li class="advantage__item">
             <h2 class="advantage__title">Меняет мир вокруг</h2>
-            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="advantage__text">Сделайте снимок и <br> украсьте его смайликом или текстовой подписью, чтобы <br> усилить эффект</p>
           </li>
           <li class="advantage__item">
-            <h2 class="advantage__title">Заводит новых друзей</h2>
+            <h2 class="advantage__title">Заводит <br> новых друзей</h2>
             <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
@@ -91,9 +89,11 @@
       <section class="research">
         <h2 class="visually-hidden">Исследование Сайта - "Пинк"</h2>
         <div class="research__wrapper">
-          <b class="research__title">Эффект на 24 часа!</b>
-          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="research__link" href="#">Узнать больше об исследовании</a>
+          <div class="research__container">
+            <b class="research__title">Эффект <br> на 24 часа!</b>
+            <p class="research__text">Британские ученые провели исследования и доказали, <br> что положительный эффект <br> от использования приложения длится целые сутки!</p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
+          </div>
       </div>
       </section>
       <section class="reviews">
@@ -101,7 +101,7 @@
         <div class="reviews__wrapper slider">
           <div class="reviews__list slider-list">
             <blockquote class="reviews__item slider__item">
-              <svg class="reviews__icon-quotes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79px" height="63px" viewBox="0 0 79 63">
+              <svg class="reviews__icon-quotes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="63" viewBox="0 0 79 63">
                 <g>
                   <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
                 </g>
@@ -117,8 +117,8 @@
           </div>
           <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
-            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+            <button class="slider__toggle slider__toggle--link" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle slider__toggle--link" type="button"><span class="visually-hidden">3</span></button>
             <div class="slider__wrapper">
               <button class="slider__arrows slider__arrows--left" type="button">
                 <span class="visually-hidden">Стрелка слева</span>
@@ -167,7 +167,7 @@
                 <tr class="price__row">
                   <td class="price__col price__col--top-width">
                     <span class="price__text">Розовый фильтр</span>
-                    <svg class="price__icon-yes" id="yes-checkbox" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="-90.357 4.875 31 21">
+                    <svg class="price__icon-yes" id="yes-checkbox" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="-90.357 0.875 31 21">
                       <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                     </svg>
                   </td>
@@ -325,5 +325,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/pixel-glass.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>

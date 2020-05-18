@@ -1,5 +1,25 @@
+.availability {
+  display: flex;
+  justify-content: center;
+
+  width: 88%;
+  margin: 0 auto;
+}
+
+.availability__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 430px;
+  padding-top: 28px;
+}
+
 .availability__download {
+  width: 100%;
   color: #ffffff;
+  text-align: center;
 
   margin-bottom: 32px;
 }
@@ -7,68 +27,93 @@
 .availability__application {
   @include zero-list();
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+
+  width: 73%;
+  max-width: 300px;
+  margin-bottom: 12px;
+}
+
+.availability__item {
+  display: flex;
+  align-items: center;
+
+  &--padding-top {
+    padding-top: 8px;
+  }
 }
 
 .availability__text {
   @include zero();
-  width: 240px;
+  width: 86%;
 
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 32px;
-}
-
-.availability {
-  display: flex;
-  justify-content: center;
-  padding-top: 28px;
-}
-
-.availability__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .availability {
-    margin: 0;
-    padding-bottom: 80px;
     justify-content: flex-start;
+
+    position: relative;
+
+    width: 94%;
+    max-width: 780px;
+
+    z-index: 1;
+  }
+
+  .availability__wrapper {
+    max-width: 300px;
+    padding-bottom: 80px;
+  }
+
+  .availability__download {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 45px;
+  }
+
+  .availability__text {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .availability__application {
+    max-width: 210px;
+    margin-bottom: 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .availability {
-    position: relative;
     justify-content: flex-start;
 
-    width: $desktop-width;
+    width: 98%;
+    max-width: 940px;
     margin: 0 auto;
+  }
 
-    z-index: 1;
+  .availability__wrapper {
+    max-width: 300px;
+    padding-top: 53px;
+    padding-bottom: 92px;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
+  .availability__download {
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-bottom: 67px;
 
-      top: -219px;
-      left: 355px;
+    font-size: 21px;
+  }
 
-      width: 600px;
-      height: 643px;
-
-      background-image: url("/img/iphone-hand-desktop@1x.png");
-      background-size: auto 590px;
-      background-repeat: no-repeat;
-      background-position: 73% 0;
-
-      z-index: -1;
-    }
+  .availability__application {
+    max-width: 204px;
+    margin-bottom: 46px;
   }
 }
