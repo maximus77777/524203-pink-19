@@ -3,47 +3,90 @@
   flex-direction: column;
 
   @include zero-list();
-  width: 280px;
+  width: 88%;
   margin: 0 auto;
+  padding-bottom: 23px;
+}
 
-  .input-list__item {
-    display: flex;
-    flex-direction: column;
+.input-list__item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 18px;
+}
+
+.input-list__label {
+  margin-left: 22px;
+  margin-bottom: 5px;
+
+  color: $red-color;
+  text-transform: uppercase;
+}
+
+.input-list__input-text {
+  min-height: 63px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font: inherit;
+  color: inherit;
+
+  outline: none;
+  border: 2px solid $light_gray-color;
+  border-radius: 3px;
+
+  &::placeholder {
+    font-size: 18px;
   }
 
-  .input-list__label {
-    color: $red-color;
-    text-transform: uppercase;
+  &:hover {
+    border: 2px solid $dark-color;
   }
 
-  .input-list__input-text {
-    font: inherit;
-    color: inherit;
 
-    &::placeholder {
-      font-size: 18px;
-    }
+  &:active,
+  &:focus {
+    border: 2px solid $red-color;
   }
 }
 
 @media (min-width: $tablet-width) {
   .input-list {
-    width: 620px;
-    margin: 0 auto;
+    width: 94%;
+    max-width: 620px;
+    padding-top: 19px;
+    padding-bottom: 57px;
+  }
 
-    .input-list__item {
-      flex-direction: row;
-    }
+  .input-list__item {
+    flex-direction: row;
 
-    .input-list__input-text {
-      width: 100%;
+    margin-bottom: 52px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
     }
+  }
+
+  .input-list__label {
+    margin: 0;
+    margin-top: 18px;
+    margin-right: 19px;
+  }
+
+  .input-list__input-text {
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .input-list {
-    width: 470px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 23px;
+  }
+
+  .input-list__item {
+    margin-bottom: 53px;
   }
 }

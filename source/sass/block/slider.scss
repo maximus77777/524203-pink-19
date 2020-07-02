@@ -35,6 +35,10 @@
     }
   }
 
+  &--color {
+    border-color: $bgcolor;
+  }
+
   &--active {
     background-color: #ffffff;
     border: 3px solid $dark-color;
@@ -73,13 +77,30 @@
   .slider__arrows {
     display: block;
 
-    padding: 0;
+    width: 22px;
+    height: 41px;
 
-    background-color: transparent;
+    background-color: $white-color;
+    background-repeat: no-repeat;
     border: none;
 
-    fill: $dark-color;
-    fill-opacity: 0.3;
+    opacity: 0.3;
+
+    &--left {
+      background-image: url("/img/icon-review-arrow-left.svg");
+    }
+
+    &--right {
+      background-image: url("/img/icon-review-arrow-right.svg");
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
 
