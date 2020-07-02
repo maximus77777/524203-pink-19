@@ -2,32 +2,59 @@
   display: flex;
   justify-content: center;
 
-  width: 320px;
+  width: 87%;
+  margin: 0 auto;
 }
 
 .textarea-list__text {
-  width: 280px;
+  width: 100%;
+  min-height: 200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 14px;
+
   font: inherit;
   color: inherit;
 
+  outline: none;
+  border: 2px solid $light_gray-color;
+  border-radius: 3px;
+
   &::placeholder {
     font-size: 18px;
+  }
+
+  &:hover {
+    border: 2px solid $dark-color;
+  }
+
+
+  &:active,
+  &:focus {
+    border: 2px solid $red-color;
   }
 }
 
 @media (min-width: $tablet-width) {
   .textarea-list {
-    width: 500px;
-    margin: 0 auto;
+    width: 81%;
+    padding-top: 37px;
+    padding-bottom: 50px;
   }
 
   .textarea-list__text {
-    width: 100%;
+    min-height: 194px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .textarea-list {
-    width: 820px;
+    width: 87.7%;
+    padding-top: 33px;
+    padding-bottom: 43px;
+  }
+
+  .textarea-list__text {
+    min-height: 129px;
   }
 }

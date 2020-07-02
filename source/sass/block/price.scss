@@ -1,173 +1,212 @@
 .price {
-  padding-top: 90px;
+  padding-top: 91px;
 
   background-color: $bgcolor;
   background-image: url("/img/bg-triangle-white.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
 
-  .price-list {
-    display: flex;
+.price__wrapper {
+  display: flex;
+  justify-content: center;
+
+  @include zero-list();
+  margin-bottom: 34px;
+
+  overflow: hidden;
+}
+
+.price__item {
+  margin-left: -2px;
+
+  &:nth-child(1) {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    margin-left: 0;
+  }
+}
+
+.price__table {
+  width: 280px;
+  min-height: 280px;
+
+  border-collapse: collapse;
+}
+
+.price__col {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  padding: 15px 20px;
+
+  text-transform: uppercase;
+
+  background-color: $white-color;
+  border: 2px solid $light_gray-color;
+  border-top-width: 0;
+
+  &--heading {
     justify-content: center;
-    overflow: hidden;
 
-    @include zero-list();
+    padding: 17px 0 19px;
+
+    font-size: 18px;
+    text-align: center;
+    color: $white-color;
+
+    background-color: $dark-color;
+    border-top-width: 0;
+    border-bottom-width: 0;
+
+    overflow: hidden;
+  }
+
+  .price__font-light {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .price__checkbox {
+    display: none;
+
+    &--active {
+      display: block;
+      position: absolute;
+
+      top: 13px;
+      left: -29px;
+      width: 105px;
+      height: 29px;
+
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+
+      background-color: $red-color;
+
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.price__icon-yes {
+  padding-top: 2px;
+
+  fill: $light_green-color;
+
+  transform: scale(1.5);
+}
+
+.price__icon-no {
+  fill: $light_red-color;
+}
+
+.price__toggles {
+  width: 20.1%;
+  margin-bottom: 43px;
+}
+
+@media (min-width: 660px) {
+  .price {
+    padding-top: 30px;
+  }
+
+  .price__wrapper {
+    width: 94%;
+    margin: 0 auto;
+    padding-bottom: 67px;
+
+    overflow: visible;
   }
 
   .price__item {
-    &--margin {
-      margin-left: -2px;
-    }
+    margin-left: -2px;
 
     &:nth-child(1) {
-      display: none;
+      display: block;
+
+      margin-left: 0;
     }
 
     &:nth-child(2) {
-      order: 1;
-    }
-
-    &:nth-child(3) {
-      order: 2;
-    }
-
-    &:nth-child(4) {
-      order: 3;
+      margin-left: -2px;
     }
   }
 
   .price__table {
-    border-collapse: collapse;
-    width: 280px;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-  .price__row {
-    background-color: $white-color;
-
-    border: 2px solid $light_gray-color;
-
-    &--color {
-      background-color: $dark-color;
-    }
-
-    &--top-border {
-      border-top-width: 0;
-      border-bottom-width: 0;
-    }
-
-    &:nth-child(2) {
-      border-top-width: 0;
-    }
-  }
-
-  .price__col-title {
-    position: relative;
-
-    padding: 16px 0;
-
-    font-size: 18px;
-    color: $white-color;
-    text-align: center;
-    text-transform: uppercase;
-
-    overflow: hidden;
-
-    &--position {
-      position: relative;
-
-      &::before {
-        content: "Хит";
-        position: absolute;
-
-        top: 11px;
-        left: -24px;
-        width: 100px;
-        height: 30px;
-
-        font-size: 14px;
-        line-height: 30px;
-        font-weight: 400;
-        text-align: center;
-
-        background-color: $red-color;
-
-        transform: rotate(-45deg);
-      }
-    }
-
-    .price__font-light {
-      font-size: 24px;
-      font-weight: 300;
-    }
+    width: 100%;
   }
 
   .price__col {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 61px;
-    padding: 0 20px;
+    width: 156px;
+    min-height: 47px;
+
+    padding: 7px 57px;
+
+    &--top-border {
+      border-top-width: 2px;
+    }
+
+    &--heading {
+      min-height: 79px;
+      padding: 0;
+      padding-top: 10px;
+
+      font-size: 16px;
+    }
+
+    &--left-border {
+      border-left-width: 0;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
+    &--right-border {
+      border-right-width: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    &--left-align {
+      padding: 8px 13px;
+    }
+
+    &--cell {
+      min-height: 49px;
+    }
+
+    .price__font-light {
+      font-size: 18px;
+    }
+
+    .price__checkbox {
+      &--active {
+        top: 5px;
+        left: -32px;
+      }
+    }
+
+    .price__icon-no {
+      transform: translateX(6px);
+    }
   }
 
   .price__text {
-    text-transform: uppercase;
-  }
+    display: none;
 
-  .price__icon-yes {
-    fill: $light_green-color;
-    transform: scale(1.5);
-  }
+    &--block {
+      display: block;
 
-  .price__icon-no {
-    fill: $light_red-color;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .price {
-    .price-list {
-      width: 640px;
-      margin: 0 auto;
-    }
-
-    .price__item {
-      width: 100%;
-
-      &:nth-child(1) {
-        display: flex;
-
-        padding-top: 92px;
-      }
-
-      &:nth-child(2) {
-        margin-left: -2px;
-      }
-    }
-
-    .price__table {
-      width: 100%;
-    }
-
-    .price__col {
-      justify-content: center;
-      min-height: 47px;
-
-      &--left-text {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-      }
-    }
-
-    .price__text {
-      display: none;
-
-      &--block {
-        display: block;
-        text-align: left;
-        text-transform: none;
-      }
+      text-transform: none;
     }
   }
 
@@ -176,10 +215,51 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 960px) {
   .price {
-    .price-list {
-      width: 940px;
+    padding-top: 145px;
+  }
+
+  .price__wrapper {
+    width: 98%;
+    padding-bottom: 95px;
+  }
+
+  .price__col {
+    width: 237px;
+    min-height: 61px;
+
+    padding: 16px 96px;
+
+    &--heading {
+      min-height: 98px;
+      padding: 0;
+      padding-top: 18px;
+
+      font-size: 18px;
+    }
+
+    &--left-align {
+      padding: 16px 22px 0;
+    }
+
+    &--cell {
+      min-height: 63px;
+    }
+
+    .price__font-light {
+      font-size: 24px;
+    }
+
+    .price__checkbox {
+      &--active {
+        top: 14px;
+        left: -28px;
+      }
+    }
+
+    .price__text {
+      font-size: 18px;
     }
   }
 }

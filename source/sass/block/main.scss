@@ -1,15 +1,37 @@
 .page-main {
   width: auto;
 
-  &--color {
+  &--form {
+    margin-top: -55px;
+
+    background-color: $white-color;
+  }
+
+  &--photo {
+    margin-top: -41px;
+
     background-color: $white-color;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
-    &--form-color {
-      background-color: $white-color;
+    &--photo {
+      margin-top: -60px;
+      padding-bottom: 36px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    &--form {
+      margin-top: -246px;
+    }
+
+    &--photo {
+      margin-top: -220px;
+      padding-bottom: 99px;
     }
   }
 }

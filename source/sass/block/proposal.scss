@@ -1,16 +1,18 @@
 .proposal {
-  width: $mobile-width;
-  margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: auto;
+  padding-top: 40px;
 
   background-color: $white-color;
 }
 
 .proposal__item {
-  width: 205px;
+  width: 66%;
+  margin: 0 auto;
+  margin-bottom: 28px;
 
   font-size: 24px;
   line-height: 30px;
@@ -20,16 +22,20 @@
 
 @media (min-width: $tablet-width) {
   .proposal {
-    width: $tablet-width;
+    width: auto;
+    padding-top: 48px;
+    padding-bottom: 44px;
   }
 
   .proposal__item {
-    width: 587px;
+    width: 94%;
+    margin-bottom: -1px;
+
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
 
     &--width {
-      width: 560px;
+      width: 53%;
     }
   }
 }
@@ -37,15 +43,12 @@
 @media (min-width: $desktop-width) {
   .proposal {
     width: auto;
+    padding-top: 66px;
+    padding-bottom: 79px;
   }
 
   .proposal__item {
-    width: 787px;
     font-size: 50px;
-    line-height: 50px;
-
-    &--width {
-      width: 660px;
-    }
+    line-height: 60px;
   }
 }
