@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.js" async></script>
     <link rel="stylesheet" href="css/pixel-glass.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,9 +16,11 @@
             <div class="main-nav__wrapper">
               <div class="main-nav__logo-wrapper">
                 <a class="main-nav__logo">
-                  <img class="main-nav__logo-image main-nav__logo-image--mobile" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-                  <img class="main-nav__logo-image main-nav__logo-image--tablet" src="/img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип">
-                  <img class="main-nav__logo-image main-nav__logo-image--desktop" src="/img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="/img/logo-pink-white-desktop.svg ">
+                    <source media="(min-width: 660px)" srcset="/img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__logo-image" src="/img/logo-pink-white-mobile.svg" alt="Логотип">
+                  </picture>
                 </a>
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
               </div>
@@ -132,7 +135,7 @@
         <h2 class="visually-hidden">Цены на сайте - "Пинк"</h2>
         <ul class="price__wrapper slider__wrapper">
           <li class="price__item">
-            <table class="price__table">
+            <table class="price__table price__table--padding-top">
               <tr class="price__row">
                 <td class="price__col price__col--left-align price__col--top-border price__col--cell">
                   <span class="price__text price__text--block">Розовый фильтр</span>
@@ -272,15 +275,22 @@
           </ul>
         </section>
         <div class="page-map">
-          <img class="page-map__image page-map__image--mobile" src="/img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
-          <img class="page-map__image page-map__image--tablet" src="/img/bg-map-tablet@1x.jpg" width="700" height="848" alt="Карта">
-          <img class="page-map__image page-map__image--desktop" src="/img/bg-map-desktop@1x.jpg" width="2560" height="1002" alt="Карта">
+          <picture>
+            <source media="(min-width: 960px)" type="image/webp" srcset="/img/bg-map-desktop@1x.jpg 1x, /img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 960px)" srcset="/img/bg-map-desktop@1x.jpg 1x, /img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" type="image/webp" srcset="/img/bg-map-tablet@1x.jpg 1x, /img/bg-map-tablet@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg 1x, /img/bg-map-tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)" type="image/webp" srcset="/img/bg-map-mobile@1x.png 1x, /img/bg-map-mobile@2x.jpg 2x">
+            <img class="page-map__image" src="/img/bg-map-mobile@1x.png" srcset="/img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+          </picture>
           <div class="page-map__marker"><span class="visually-hidden">Маркер</span></div>
         </div>
         <div class="page-footer__grid">
           <a class="page-footer__logo">
-            <img class="page-footer__logo-image page-footer__logo-image--tablet" src="/img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
-            <img class="page-footer__logo-image page-footer__logo-image--desktop" src="/img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип">
+            <picture>
+              <source media="(min-width: 960px)" srcset="/img/logo-pink-blue-desktop.svg">
+              <img class="page-footer__logo-image" src="/img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
+            </picture>
           </a>
           <ul class="page-social">
             <li class="page-social__item">

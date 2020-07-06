@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.js" async></script>
     <link rel="stylesheet" href="css/pixel-glass.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,9 +16,11 @@
             <div class="main-nav__wrapper">
               <div class="main-nav__logo-wrapper">
                 <a class="main-nav__logo" href="index.html">
-                  <img class="main-nav__logo-image main-nav__logo-image--mobile" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-                  <img class="main-nav__logo-image main-nav__logo-image--tablet" src="/img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип">
-                  <img class="main-nav__logo-image main-nav__logo-image--desktop" src="/img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="/img/logo-pink-white-desktop.svg ">
+                    <source media="(min-width: 660px)" srcset="/img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__logo-image" src="/img/logo-pink-white-mobile.svg" alt="Логотип">
+                  </picture>
                 </a>
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
               </div>
@@ -137,8 +140,10 @@
     <footer class="page-footer">
       <div class="page-footer__grid page-footer__grid--block">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-image page-footer__logo-image--tablet" src="/img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
-          <img class="page-footer__logo-image page-footer__logo-image--desktop" src="/img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип">
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="/img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
+          </picture>
         </a>
         <ul class="page-social">
           <li class="page-social__item">

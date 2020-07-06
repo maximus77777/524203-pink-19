@@ -113,13 +113,13 @@
 
 @media (min-width: 660px) {
   .price {
-    padding-top: 30px;
+    padding-top: 90px;
+    padding-bottom: 8px;
   }
 
   .price__wrapper {
     width: 94%;
     margin: 0 auto;
-    padding-bottom: 67px;
 
     overflow: visible;
   }
@@ -141,9 +141,12 @@
   .price__table {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 
     width: 100%;
+
+    &--padding-top {
+      padding-top: 76px;
+    }
   }
 
   .price__col {
@@ -218,11 +221,18 @@
 @media (min-width: 960px) {
   .price {
     padding-top: 145px;
+    padding-bottom: 0;
   }
 
   .price__wrapper {
     width: 98%;
     padding-bottom: 95px;
+  }
+
+  .price__table {
+    &--padding-top {
+      padding-top: 96px;
+    }
   }
 
   .price__col {

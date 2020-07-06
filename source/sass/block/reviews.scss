@@ -36,6 +36,7 @@
 }
 
 .reviews__text {
+  width: 100%;
   max-width: 470px;
 
   @include zero();

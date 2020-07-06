@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.js" async></script>
     <link rel="stylesheet" href="css/pixel-glass.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,9 +16,11 @@
             <div class="main-nav__wrapper">
               <div class="main-nav__logo-wrapper">
                 <a class="main-nav__logo" href="index.html">
-                  <img class="main-nav__logo-image main-nav__logo-image--mobile" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-                  <img class="main-nav__logo-image main-nav__logo-image--tablet" src="/img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип">
-                  <img class="main-nav__logo-image main-nav__logo-image--desktop" src="/img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="/img/logo-pink-white-desktop.svg ">
+                    <source media="(min-width: 660px)" srcset="/img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__logo-image" src="/img/logo-pink-white-mobile.svg" alt="Логотип">
+                  </picture>
                 </a>
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
               </div>
@@ -43,9 +46,14 @@
         <ul class="photo__block">
           <li class="photo__item photo__item--main-item">
             <a class="photo__picture" href="#">
-              <img class="photo__link photo__link--position" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Вид сверху">
-              <img class="photo__link photo__link--position" src="/img/panorama-tablet@1x.jpg" width="700" height="509" alt="Вид сверху">
-              <img class="photo__link photo__link--position" src="/img/panorama-desktop@1x.jpg" width="1200" height="506" alt="Вид сверху">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/panorama-tablet@1x.jpg 1x, /img/panorama-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.jpg 1x, /img/panorama-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" type="image/webp" srcset="/img/panorama-mobile@1x.jpg 1x, /img/panorama-mobile@2x.jpg 2x">
+                <img class="photo__link photo__link--position" src="/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@2x.jpg 2x" alt="Вид сверху">
+              </picture>
             </a>
             <span class="photo__checkbox">Панорама дня</span>
             <div class="photo__info photo__info--main-info">
@@ -65,9 +73,14 @@
           </li>
           <li class="photo__item">
             <a class="photo__picture" href="#">
-              <img class="photo__link" src="/img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография машины">
-              <img class="photo__link" src="/img/photo-car-tablet@1x.jpg" width="300" height="300" alt="Фотография машины">
-              <img class="photo__link" src="/img/photo-car-desktop@1x.jpg" width="300" height="400" alt="Фотография машины">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/photo-car-desktop@1x.jpg 1x, /img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/photo-car-desktop@1x.jpg 1x, /img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/photo-car-tablet@1x.jpg 1x, /img/photo-car-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-car-tablet@1x.jpg 1x, /img/photo-car-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" type="image/webp" srcset="/img/photo-car-mobile@1x.jpg 1x, /img/photo-car-mobile@2x.jpg 2x">
+                <img class="photo__link" src="/img/photo-car-mobile@1x.jpg" srcset="/img/photo-car-mobile@2x.jpg 2x" alt="Фотография машины">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__name">Левон <span>(5 часов назад)</span></b>
@@ -86,9 +99,14 @@
           </li>
           <li class="photo__item">
             <a class="photo__picture" href="#">
-              <img class="photo__link" src="/img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Музыкальный инструмент">
-              <img class="photo__link" src="/img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="Музыкальный инструмент">
-              <img class="photo__link" src="/img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="Музыкальный инструмент">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/photo-drumset-desktop@1x.jpg 1x, /img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/photo-drumset-desktop@1x.jpg 1x, /img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/photo-drumset-tablet@1x.jpg 1x, /img/photo-drumset-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg 1x, /img/photo-drumset-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" type="image/webp" srcset="/img/photo-drumset-mobile@1x.jpg 1x, /img/photo-drumset-mobile@2x.jpg 2x">
+                <img class="photo__link" src="/img/photo-drumset-mobile@1x.jpg" srcset="/img/photo-drumset-mobile@2x.jpg 2x" alt="Музыкальный инструмент">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__name">Антон <span>(12 часов назад)</span></b>
@@ -107,9 +125,14 @@
           </li>
           <li class="photo__item">
             <a class="photo__picture" href="#">
-              <img class="photo__link" src="/img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянное помещение">
-              <img class="photo__link" src="/img/photo-window-tablet@1x.jpg" width="300" height="300" alt="Стеклянное помещение">
-              <img class="photo__link" src="/img/photo-window-desktop@1x.jpg" width="300" height="400" alt="Стеклянное помещение">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/photo-window-desktop@1x.jpg 1x, /img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/photo-window-desktop@1x.jpg 1x, /img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/photo-window-tablet@1x.jpg 1x, /img/photo-window-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg 1x, /img/photo-window-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" type="image/webp" srcset="/img/photo-window-mobile@1x.jpg 1x, /img/photo-window-mobile@2x.jpg 2x">
+                <img class="photo__link" src="/img/photo-window-mobile@1x.jpg" srcset="/img/photo-window-mobile@2x.jpg 2x" alt="Стеклянное помещение">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__name">Борис <span>(20 часов назад)</span></b>
@@ -127,9 +150,14 @@
             </div>
           <li class="photo__item">
             <a class="photo__picture" href="#">
-              <img class="photo__link" src="/img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок">
-              <img class="photo__link" src="/img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="Рынок">
-              <img class="photo__link" src="/img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="Рынок">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/photo-fair-desktop@1x.jpg 1x, /img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/photo-fair-desktop@1x.jpg 1x, /img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/photo-fair-tablet@1x.jpg 1x, /img/photo-fair-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg 1x, /img/photo-fair-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" type="image/webp" srcset="/img/photo-fair-mobile@1x.jpg 1x, /img/photo-fair-mobile@2x.jpg 2x">
+                <img class="photo__link" src="/img/photo-fair-mobile@1x.jpg" srcset="/img/photo-fair-mobile@2x.jpg 2x" alt="Рынок">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__name">Сергей <span>(25 часов назад)</span></b>
@@ -148,9 +176,14 @@
           </li>
           <li class="photo__item">
             <a class="photo__picture" href="#">
-              <img class="photo__link" src="/img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с верхней точки скалы">
-              <img class="photo__link" src="/img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="Вид с верхней точки скалы">
-              <img class="photo__link" src="/img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="Вид с верхней точки скалы">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/photo-pov-desktop@1x.jpg 1x, /img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/photo-pov-desktop@1x.jpg 1x, /img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" type="image/webp" srcset="img/photo-pov-mobile@1x.jpg 1x, /img/photo-pov-mobile@2x.jpg 2x">
+                <img class="photo__link" src="/img/photo-pov-mobile@1x.jpg" srcset="/img/photo-pov-mobile@2x.jpg 2x" alt="Вид с верхней точки скалы">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__name">Максим <span>(40 часов назад)</span></b>
@@ -169,9 +202,14 @@
           </li>
           <li class="photo__item">
             <a class="photo__picture" href="#">
-              <img class="photo__link" src="/img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета">
-              <img class="photo__link" src="/img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="Крыло самолета">
-              <img class="photo__link" src="/img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="Крыло самолета">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/photo-wing-desktop@1x.jpg 1x, /img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/photo-wing-desktop@1x.jpg 1x, /img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/photo-wing-tablet@1x.jpg 1x, /img/photo-wing-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg 1x, /img/photo-wing-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" type="image/webp" srcset="/img/photo-wing-mobile@1x.jpg 1x, /img/photo-wing-mobile@2x.jpg 2x">
+                <img class="photo__link" src="/img/photo-wing-mobile@1x.jpg" srcset="/img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолета">
+              </picture>
             </a>
             <div class="photo__info">
               <b class="photo__name">Надежда <span>(45 часов назад)</span></b>
@@ -197,9 +235,16 @@
         <h2 class="visually-hidden">Слайдер сайта "Пинк"</h2>
         <div class="photo-image__wrapper">
           <div class="photo-image__container">
-            <a class="photo-image__link" href="#"><img class="photo-image__picture photo-image__picture--block-mobile" src="/img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Снежная дорога"></a>
-            <a class="photo-image__link" href="#"><img class="photo-image__picture photo-image__picture--block-tablet" src="/img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Снежная дорога"></a>
-            <a class="photo-image__link" href="#"><img class="photo-image__picture photo-image__picture--block-dektop" src="/img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Снежная дорога"></a>
+            <a class="photo-image__link" href="#">
+              <picture>
+                <source media="(min-width: 960px)" type="image/webp" srcset="/img/photo-road-desktop@1x.jpg 1x, /img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="/img/photo-road-desktop@1x.jpg 1x, /img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="/img/photo-road-tablet@1x.jpg 1x, /img/photo-road-tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-road-tablet@1x.jpg 1x, /img/photo-road-tablet@2x.jpg 2x">
+                  <source media="(min-width: 320px)" type="image/webp" srcset="/img/photo-road-mobile@1x.jpg 1x, /img/photo-road-mobile@2x.jpg 2x">
+                <img class="photo-image__picture" src="/img/photo-road-mobile@1x.jpg" srcset="/img/photo-road-mobile@2x.jpg 2x" alt="Снежная дорога">
+              </picture>
+            </a>
           </div>
           <div class="photo-image__control">
             <div class="photo-image__block">
@@ -256,8 +301,10 @@
     <footer class="page-footer">
       <div class="page-footer__grid page-footer__grid--block">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-image page-footer__logo-image--tablet" src="/img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
-          <img class="page-footer__logo-image page-footer__logo-image--desktop" src="/img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип">
+          <picture>
+            <source media="(min-width: 960px)" srcset="/img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="/img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
+          </picture>
         </a>
         <ul class="page-social">
           <li class="page-social__item">
