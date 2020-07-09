@@ -1,0 +1,25 @@
+.second-logo {
+  display: none;
+
+  fill: $dark-color;
+
+  cursor: pointer;
+
+  &:hover {
+    fill: $red-color;
+  }
+
+  &:active {
+    fill: $dark-color;
+
+    opacity: 0.3;
+  }
+}
+
+.second__logo-glasses {
+  fill: $red-color;
+}
+
+.second-logo__star {
+  fill: $dark-color;
+}

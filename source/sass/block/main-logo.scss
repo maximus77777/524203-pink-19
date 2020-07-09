@@ -1,0 +1,20 @@
+.main-logo {
+  display: none;
+
+  fill: #ffffff;
+
+  cursor: pointer;
+
+  &:hover {
+    fill: $red-color;
+  }
+
+  &:active {
+    fill: $white-color;
+    opacity: 0.3;
+  }
+}
+
+.main-logo__stars {
+  fill: $red-color;
+}

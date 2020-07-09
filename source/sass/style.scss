@@ -3,6 +3,8 @@
 @import "mixin.scss";
 @import "font.scss";
 @import "global.scss";
+@import "block/main-logo.scss";
+@import "block/second-logo.scss";
 @import "block/page-header.scss";
 @import "block/main-nav.scss";
 @import "block/main.scss";
@@ -13,6 +15,8 @@
 @import "block/reviews.scss";
 @import "block/slider.scss";
 @import "block/price.scss";
+@import "block/icon-yes.scss";
+@import "block/icon-no.scss";
 @import "block/photo.scss";
 @import "block/photo-image.scss";
 @import "block/form.scss";
@@ -24,4 +28,6 @@
 @import "block/page-footer.scss";
 @import "block/contacts.scss";
 @import "block/page-map.scss";
-@import "block/page-social.scss"
+@import "block/page-social.scss";
+@import "block/modal.scss";
+@import "block/modal-error.scss";
