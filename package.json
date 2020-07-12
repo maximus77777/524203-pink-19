@@ -40,6 +40,8 @@
     "node": "12.16.1"
   },
   "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
     "normalize.css": "^8.0.1"
   }
 }

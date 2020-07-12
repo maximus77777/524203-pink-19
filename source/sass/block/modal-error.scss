@@ -13,6 +13,10 @@
   box-shadow: 0 7px 15px 0 rgba(1, 1, 0, 0.15);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-error__wrapper {
   padding-top: 42px;
   min-height: 289px;

@@ -208,7 +208,6 @@
     flex-direction: row;
     justify-content: space-between;
 
-
     width: 98%;
     max-width: 1200px;
     min-height: 58px;
@@ -217,6 +216,8 @@
 
   .main-nav__logo-wrapper {
     padding-left: 0;
+
+    background-color: transparent;
   }
 
   .main-nav__list {
