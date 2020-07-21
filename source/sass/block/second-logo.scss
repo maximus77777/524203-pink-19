@@ -5,18 +5,20 @@
 
   cursor: pointer;
 
-  &:hover {
-    fill: $red-color;
-  }
+  &--link {
+    &:hover {
+      fill: $red-color;
+    }
 
-  &:active {
-    fill: $dark-color;
+    &:active {
+      fill: $dark-color;
 
-    opacity: 0.3;
+      opacity: 0.3;
+    }
   }
 }
 
-.second__logo-glasses {
+.second-logo__glasses {
   fill: $red-color;
 }
 

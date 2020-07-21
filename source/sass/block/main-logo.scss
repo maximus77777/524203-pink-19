@@ -5,13 +5,15 @@
 
   cursor: pointer;
 
-  &:hover {
-    fill: $red-color;
-  }
+  &--link {
+    &:hover {
+      fill: $red-color;
+    }
 
-  &:active {
-    fill: $white-color;
-    opacity: 0.3;
+    &:active {
+      fill: $white-color;
+      opacity: 0.3;
+    }
   }
 }
 

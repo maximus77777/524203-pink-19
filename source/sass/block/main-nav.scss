@@ -220,6 +220,10 @@
     background-color: transparent;
   }
 
+  .main-nav--closed .main-nav__logo-wrapper {
+    background-color: transparent;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
