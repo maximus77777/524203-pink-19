@@ -1,0 +1,147 @@
+.modal-error {
+  display: none;
+  position: fixed;
+  top: 25vh;
+  left: 50vw;
+
+  width: 100%;
+  max-width: 320px;
+
+  margin-left: -159px;
+
+  background-color: $white-color;
+  box-shadow: 0 7px 15px 0 rgba(1, 1, 0, 0.15);
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-error__wrapper {
+  padding-top: 42px;
+  min-height: 289px;
+}
+
+.modal-error__title {
+  display: block;
+
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal-error__text {
+  width: 89%;
+
+  @include zero();
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal-error__button-wrapper {
+  min-height: 118px;
+
+  background-color: transparent;
+}
+
+.modal-error__button-close {
+  display: block;
+
+  width: 100%;
+  max-width: 280px;
+  min-height: 67px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 18px;
+  color: $white-color;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: $green-color;
+  border: none;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $dark_green-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark_green-color;
+  }
+
+  &:disabled {
+    background-color: $light_gray-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-error {
+    max-width: 460px;
+    margin-left: -231px;
+  }
+
+  .modal-error__wrapper {
+    padding-top: 39px;
+    min-height: 363px;
+  }
+
+  .modal-error__title {
+    width: 49%;
+    margin-bottom: 27px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-error__text {
+    width: 71%;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .modal-error__button-close {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-error {
+    max-width: 780px;
+    min-height: 376px;
+    margin-left: -392px;
+  }
+
+  .modal-error__wrapper {
+    padding-top: 44px;
+  }
+
+  .modal-error__title {
+    margin-bottom: 30px;
+  }
+
+  .modal-error__text {
+    width: 47%;
+    margin-bottom: 58px;
+  }
+
+  .modal-error__button-wrapper {
+    min-height: 163px;
+    padding-top: 47px;
+
+    background-color: $bgcolor;
+  }
+}

@@ -18,12 +18,32 @@
   margin-bottom: 30px;
 }
 
+.page-footer__logo-image {
+  display: none;
+
+  &--tablet {
+    display: block;
+  }
+}
+
 .page-footer__company {
   display: flex;
 
   @include zero();
   width: 41.5%;
   max-width: 130px;
+}
+
+.page-footer__icon-htmlacademy {
+  color: $red-color;
+
+  &:hover {
+    color: $dark-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__text {
@@ -58,6 +78,14 @@
   .page-footer__grid {
     width: 98%;
     max-width: 1100px;
+  }
+
+  .page-footer__logo-image {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .page-footer__company {
